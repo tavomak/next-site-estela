@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 const HeaderNavbar = () => {
     return (
@@ -16,9 +17,24 @@ const HeaderNavbar = () => {
                 </a>
             </div>
             <ul className="d-flex mb-0 mr-4">
-                <li className="mx-2">Enfoque</li>
-                <li className="mx-2"> Servicios</li>
-                <li className="mx-2">Cultura</li>
+                <li className="mx-2">
+                    <Link href="/">
+                        <a>Enfoque</a>
+                    </Link>{' '}
+                    |
+                </li>
+                <li className="mx-2">
+                    <Link href="/">
+                        <a>Servicios</a>
+                    </Link>{' '}
+                    |
+                </li>
+                <li className="mx-2">
+                    <Link href="/">
+                        <a>Cultura</a>
+                    </Link>{' '}
+                    |
+                </li>
             </ul>
             <div >
                 <a href="#">

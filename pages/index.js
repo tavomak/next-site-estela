@@ -1,17 +1,11 @@
-import Head from 'next/head'
+import Layout from '../components/Layout'
 import PrimaryHero from '../components/PrimaryHero'
-import HeaderNavbar from '../components/HeaderNavbar'
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <HeaderNavbar />
+    <Layout>
       <PrimaryHero />
+    </Layout>
       
-    </>
   )
 }
